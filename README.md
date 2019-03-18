@@ -1,14 +1,20 @@
 # insta-search
 Instagram user details
 
-# Exmaples
+## Installation
+```
+npm install insta-search
+```
+
+## Usage
 ```js
 const insta = require("insta-search");
 
 insta.search("xRokz").then(user => console.log(user))
 ```
--Response:
-
+## Response Example
+### Search
+```js
     user:
      { pk: string,
        username: string,
@@ -24,4 +30,4 @@ insta.search("xRokz").then(user => console.log(user))
        mutual_followers_count: integer,
        unseen_count: integer 
      }
-
+```
